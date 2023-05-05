@@ -3,7 +3,6 @@ export interface Iadmin {
   email: string;
   password: string;
   confirmpassword: string;
-  product: [];
 }
 
 export interface Iproducts {
