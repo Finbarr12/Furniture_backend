@@ -21,7 +21,9 @@ export const Mailer = async (req: Request, res: Response) => {
     // const getAccessToken: any = (await oAuth.getAccessToken()).token;
 
     const transport = nodemailer.createTransport(
-      sendInBlueTransport.setApiKey(EnvironmentVariables.send_in_blue)
+      new sendInBlueTransport({
+        apiKey: EnvironmentVariables.send_in_blue,
+      })
     );
 
     const message = {

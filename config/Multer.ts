@@ -18,6 +18,6 @@ const storage = multer.diskStorage({
   },
 });
 
-const ViewImage = multer({ storage: storage }).single("farmerImage");
+const ViewImage = multer({ storage: storage }).single("Image");
 
 export default ViewImage;

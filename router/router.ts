@@ -7,9 +7,9 @@ import { Mailer } from "../Controller/Mailer";
 const router = Router();
 
 router.post("/adminsignup", SignUpAdmin);
-router.post("/adminsignup", SignInadmin);
+router.post("/adminsignin", SignInadmin);
 router.post("/createproduct", ViewImage, CreateProducts);
 router.get("/allproducts", Allproducts);
-router.post("mailer", Mailer);
+router.post("/mailer", Mailer);
 
 export default router;
