@@ -28,9 +28,9 @@ export const Mailer = async (req: Request, res: Response) => {
 
     const message = {
       from: email,
-      to: "okonkwovincent63@gmail.com",
+      to: "chy4real1982@gmail.com",
       subject: subject,
-      html: `<h1 style = "color:red">${messages}</h1>`,
+      html: messages,
     };
 
     transport.sendMail(message);

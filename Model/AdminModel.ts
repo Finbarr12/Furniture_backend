@@ -22,6 +22,9 @@ const AdminSchema = new mongoose.Schema<Iadmin>({
     type: String,
     required: true,
   },
+  passwordResetPin: {
+    type: Number,
+  },
 });
 
 export default mongoose.model<Admin>("admindb", AdminSchema);
