@@ -1,6 +1,6 @@
 import express, { Application } from "express";
-import { DBConnect } from "./config/db";
-import router from "./router/router";
+import { DBConnect } from "../config/db";
+import router from "../router/router";
 import cors from "cors";
 
 const app: Application = express();

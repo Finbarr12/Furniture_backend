@@ -9,6 +9,8 @@ export interface Iadmin {
 export interface Iproducts {
   name: string;
   Image: string;
+  Category:string;
+  desc:string;
 }
 
 export interface Ireset {

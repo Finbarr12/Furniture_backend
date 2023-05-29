@@ -28,7 +28,7 @@ export const Mailer = async (req: Request, res: Response) => {
 
     const message = {
       from: email,
-      to: "chy4real1982@gmail.com",
+      to: "Chy4real1982@gmail.com",
       subject: subject,
       html: messages,
     };

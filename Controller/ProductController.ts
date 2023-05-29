@@ -8,13 +8,15 @@ export const CreateProducts = async (
   res: Response
 ) => {
   try {
-    const { name, Image } = req.body;
+    const { name, Image, Category, desc } = req.body;
 
     const CloudImg = await cloudinary.uploader.upload(req!.file!.path);
 
     const createProd = await ProductModel.create({
       name,
       Image: CloudImg!.secure_url,
+      Category,
+      desc,
     });
 
     return res.status(200).json({
